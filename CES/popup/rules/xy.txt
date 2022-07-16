@@ -1,0 +1,3 @@
+
+rules_bg - 679  46
+btn_close - 379  509

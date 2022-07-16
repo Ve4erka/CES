@@ -1,0 +1,5 @@
+
+rules_bg - 679  46
+
+btn_accept - 207  509
+btn_close - 553  509

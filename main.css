@@ -1,0 +1,1112 @@
+@font-face{
+    font-family: 'Acrom';
+    src: url("text/Acrom-Bold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Radiotechnika';
+    src: url('text/RADIOTECHNIKA.OTF');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    scrollbar-width: thin;
+    scrollbar-color: transparent;
+} 
+/* для Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+}
+*::-webkit-scrollbar-track {
+    background: transparent
+}
+*::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 3px solid transparent;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    background: #180a21 url(images/main_lobbie1.png) center 0 no-repeat;
+}
+
+.container{
+    position: relative;
+    max-width: 1440px;
+    margin:0 auto;
+}
+section{
+    display:flex;
+    flex-direction: row;
+    width:1426px;
+    margin:0 auto;
+}
+.left-section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25px;
+}
+.games-block{
+    width: 250px;
+    height: 553px;
+    border-radius: 18px 18px 0px 0px;
+    margin-top:18px;
+    filter: drop-shadow(0px 6px 8px rgba(0,0,0,0.28));
+    background-image: linear-gradient(0deg, #291735 0%, #1b1b1b 100%);
+}
+.all-games{
+    display:flex;
+    width: 240px;
+    height: 54px;
+    border-radius: 10px;
+    background-color: #2c2c2c;
+    margin:11px 0px 14px 10px;
+}
+.del-game{
+    display:none;
+}
+.purple-line{
+    display: flex;
+    width: 6px;
+    height: 54px;
+    background-color: #c588f2;
+}
+.purple-line-active2{
+    display: none;
+    margin-left: 48px;
+    width: 6px;
+    height: 65px;
+    background-color: #c588f2;
+}
+.purple-line-active3{
+    display: none;
+    margin-left: 48px;
+    width: 6px;
+    height: 65px;
+    background-color: #c588f2;
+}
+.purple-line-active4{
+    display: none;
+    margin-left: 48px;
+    width: 6px;
+    height: 65px;
+    background-color: #c588f2;
+}
+.purple-line-active5{
+    display: none;
+    margin-left: 30px;
+    width: 6px;
+    height: 65px;
+    background-color: #c588f2;
+}
+.all-games h1{
+    font-size: 19px;
+    color: #c288f2;
+    font-family: "Radiotechnika";
+    filter: drop-shadow(0px 2px 1px #000000);
+    width:236px;
+    text-align:center;
+}
+.all-games h1:active{
+    background-color: #2AA5A0;
+    background-image: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(255,100,0,1) 0%, rgba(255,237,0,1) 60%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}
+.slots-text{
+    font-size: 10px;
+    letter-spacing: 0px;
+    color: #494949;
+    font-family: "Microsoft Sans Serif";
+    text-align: center;
+    margin-top:10px;
+}
+
+.all-games-active{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 65px;
+    border-radius: 10px;
+    background-color: #2c2c2c;
+    margin:11px 0px 14px 10px;
+}
+
+.upperline{
+    width:212px;
+    margin:0 auto;
+    background-color: #6a6a92;
+    border: 1px solid #6a6a92;
+}
+.igrosoft{
+    height:90px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.igrosoft img{
+    width:140px;
+}
+.center-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 161px;
+    width: 723px;
+    height: 620px;
+    overflow: auto;
+    margin-left: 70px;
+}
+.center-section img{
+    width: 230px;
+    height: 163px;
+    margin-right: 6px;
+    margin-bottom: 12px;
+    z-index: -1;
+}
+.right-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 340px;
+    margin-top: 10px;
+
+}
+
+/*ОЧКИ*/
+.score-block{
+    width: 346px;
+    height: 166px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 6px 8px rgba(0,0,0,0.28));
+    background-color: #1c1c1c;
+    margin-bottom:21px;
+    margin-top: 43px;
+}
+.score-block h1{
+    font-size: 19px;
+    color: #ffffff;
+    font-family: "Radiotechnika";
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 15px;
+}
+.im_hov{
+    background: url(images/rectangle.png) center 0 no-repeat;
+    width: 29px;
+    height: 29px;
+}
+.im_hov:active{
+    background: url(images/rectangle1.png) center 0 no-repeat;
+    width: 29px;
+    height: 29px;
+}
+.score-input{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #2c2c2c;
+    margin:0 auto;
+    text-align: center;
+    font-size: 31px;
+    color: #ffae00;
+    font-weight: bold;
+    font-family: "Acrom";
+}
+.score-denomination{
+    display:flex;
+    flex-direction:row;
+    margin-top:17px;
+    margin-left:16px;
+}
+.denomination-text{
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "Radiotechnika";
+    margin-top:9px;
+}
+.score-coefficient{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 101px;
+    height: 31px;
+    border-radius: 6px;
+    background-color: rgba(230,240,249,0.050980392156862744);
+    font-size: 19px;
+    font-weight: bold;
+    font-family: "Acrom";
+    margin-left:17px;
+    margin-right:12px;
+    
+}
+.score-coefficient-menu{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 101px;
+    height: 93px;
+    border-radius: 6px;
+    background-color: rgb(39 39 40);
+    font-size: 19px;
+    font-weight: bold;
+    font-family: "Acrom";
+    margin-left:17px;
+    margin-right:12px;
+    z-index: 35;
+}
+/*Jackpot*/
+.jackpot-block{
+    width: 346px;
+    height: 272px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 6px 8px rgba(0,0,0,0.28));
+    background-image: linear-gradient(0deg, #291735 0%, #1b1b1b 100%);
+    margin-bottom:24px;
+    display:flex;
+    flex-direction: column;
+    z-index: -1;
+}
+.jackpot-title{
+    text-align:center;
+}
+.jackpot-item{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:54px;
+}
+.upperline2{
+    width:286px;
+    margin:0 auto;
+    background-color: #6a6a92;
+    border: 1px solid #6a6a92;
+}
+.jackpot-item-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 23px;
+}
+.jackpot-item-icon img{
+    height:max-content;
+}
+.jackpot-item-text{
+    font-size: 18px;
+    color: #fafafa;
+    font-family: "Radiotechnika";
+    margin-left:10px;
+}
+.jackpot-item-text2{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Acrom";
+    text-align: right;
+    margin-top:2px;
+    margin-right:31px;
+}
+
+/*buttons rules and oferta*/
+.buttons{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 3;
+}
+.button-rules{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/btn2.png) center 0 no-repeat;
+    height:43px;
+    width:164px;
+    font-size:16px;
+    color: #ececec;
+    font-family: "Radiotechnika";
+}
+
+.button-rules:hover{
+    color: #ffae00;
+}
+.buttons button:hover{
+    color: #ffae00;
+}
+.lion-image{
+    background: url(images/Icons/1_00015.png) center 0 no-repeat;
+    background-size: 125px;
+    height: 125px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: justify;
+    margin-top: -75px;
+}
+.opros{
+    background: url(images/btn.png) center 0 no-repeat;
+    background-size: 248px;
+    width:248px;
+    height:64px;
+    text-align: center;
+    margin-top:40px;
+}
+.opros h1{
+    font-size: 16px;
+    color: #1c1c1c;
+    font-family: "Radiotechnika";
+    margin-top:24px;
+    cursor:pointer;
+}
+.opros h1:hover{
+    color: #ffffff;
+    cursor:pointer;
+}
+.footer-image{
+    margin: 0 auto;
+    margin-top: -144px;
+    z-index: 2;
+    width:100%;
+}
+.button-save{
+    background: url(images/save-button.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 655px;
+    height: 125px;
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    margin-bottom:140px;
+}
+.button-save h1{
+    font-size: 21px;
+    color: #1c1c1c;
+    font-family: "Radiotechnika";
+    margin-top:24px;
+    cursor:pointer;
+}
+.right-arrow{
+    background: url(images/rightarror.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 34px;
+    height: 21px;
+}
+
+.left-arrow{
+    background: url(images/left-arror.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 34px;
+    height: 21px;
+}
+.right-arrow:hover{
+    background: url(images/r-hoveer.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 34px;
+    height: 21px;
+}
+.left-arrow:hover{
+    background: url(images/l-hover.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 34px;
+    height: 21px;
+}
+.right-arrow:active{
+    background: url(images/r-active.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 34px;
+    height: 21px;
+}
+.left-arrow:active{
+    background: url(images/l-active.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 34px;
+    height: 21px;
+}
+.button-save h1:hover{
+    color: #ffffff;
+}
+.br-block{
+    background-color: white;
+    width: 888px;
+    height: 192px;
+    z-index: -1;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    margin-bottom: 70px;
+     
+}
+.record{
+    display: none;
+    background: url(CES/popup/leaderboard/board_bg.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 762px;
+    height: 558px;
+    z-index: 33;
+    margin: auto;
+    margin-top: -785px;;
+    margin-left: 300px;
+    align-items: flex-end;
+
+}
+.oprosiki{
+    display: none;
+    background: url(CES/popup/quiz/startquiz_bg.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 762px;
+    height: 558px;
+    z-index: 33;
+    margin: auto;
+    margin-top: -785px;
+    margin-left: 300px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.opros_start{
+    display: none;
+    background: url(CES/popup/quiz/quiz_bg.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 762px;
+    height: 558px;
+    z-index: 33;
+    margin: auto;
+    margin-top: -785px;
+    margin-left: 300px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
+}
+.btn-op-cl{
+    display: flex;
+    width: 762px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.startick{
+    background: url(CES/popup/quiz/start_btn.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 272px;
+    height: 45px;
+    margin-top: 40px;
+}
+.startick:hover{
+    background: url(CES/popup/quiz/start_btn-hover.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 272px;
+    height: 45px;
+}
+.startick:active{
+    background: url(CES/popup/quiz/start_btn-clicked.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 272px;
+    height: 45px;
+}
+.zakrat{
+    background: url(CES/popup/leaderboard/btn_close.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 272px;
+    height: 45px;
+}
+.oprosik{
+    background: url(CES/popup/leaderboard/btn_quiz.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 272px;
+    height: 45px;
+}
+.oprosik:hover{
+    background: url(CES/popup/leaderboard/btn_quiz-hover.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 272px;
+    height: 45px;
+}
+
+.zakrat:hover{
+    background: url(CES/popup/leaderboard/btn_close-hover.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 272px;
+    height: 45px;
+}
+.oprosik:active{
+    background: url(CES/popup/leaderboard/btn_quiz-clicked.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 272px;
+    height: 45px;
+}
+
+.zakrat:active{
+    background: url(CES/popup/leaderboard/btn_close-clicked.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 272px;
+    height: 45px;
+}
+.Rec{
+    display: none;
+}
+.black-block{
+    z-index: 32;
+    width: 1440px;
+    height: 900px;
+    top: 0;
+    background: rgb(0,0,0,0.7);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    position: fixed;
+}
+.answer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 70px;
+
+}
+.podtr{
+    display: flex;
+    align-items: center;
+}
+.podtr_button{
+    background: url(CES/popup/quiz/accept_1.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 26px;
+    height: 26px;
+}
+
+.b_yes{
+    background: url(CES/popup/quiz/btn_answer1.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 272px;
+    height: 45px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+.b_yes:hover{
+    background: url(CES/popup/quiz/btn_answer1-hover.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 272px;
+    height: 45px;
+}
+.b_yes:active{
+    background: url(CES/popup/quiz/btn_answer1-clicked.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 272px;
+    height: 45px;
+}
+
+.b_no{
+    background: url(CES/popup/quiz/btn_answer2.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 272px;
+    height: 45px;
+    margin-bottom: 10px;
+}
+.b_no:hover{
+    background: url(CES/popup/quiz/btn_answer2-hover.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 272px;
+    height: 45px;
+}
+.b_no:active{
+    background: url(CES/popup/quiz/btn_answer2-clicked.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 272px;
+    height: 45px;
+}
+
+.b_nt{
+    background: url(CES/popup/quiz/btn_answer3.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 272px;
+    height: 45px;
+}
+.b_nt:hover{
+    background: url(CES/popup/quiz/btn_answer3-hover.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 272px;
+    height: 45px;
+}
+.b_nt:active{
+    background: url(CES/popup/quiz/btn_answer3-clicked.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 272px;
+    height: 45px;
+}
+.ofer_start{
+    display: none;
+    background: url(CES/popup/oferta/oferta_bg.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 762px;
+    height: 558px;
+    z-index: 33;
+    margin: auto;
+    margin-top: -785px;
+    margin-left: 300px;
+    align-items: flex-end;
+
+}
+
+.pravila_start{
+    display: none;
+    background: url(CES/popup/rules/rules_bg.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 762px;
+    height: 558px;
+    z-index: 33;
+    margin: auto;
+    margin-top: -785px;
+    margin-left: 300px;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.btn-op-cl_ofer{
+    display: flex;
+    width: 762px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.zakratik{
+    background: url(CES/popup/oferta/btn_close.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 272px;
+    height: 45px;
+}
+.aceptik{
+    background: url(CES/popup/oferta/btn_accept.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 272px;
+    height: 45px;
+}
+.aceptik:hover{
+    background: url(CES/popup/oferta/btn_accept-hover.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 272px;
+    height: 45px;
+}
+
+.zakratik:hover{
+    background: url(CES/popup/oferta/btn_close-hover.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 272px;
+    height: 45px;
+}
+.aceptik:active{
+    background: url(CES/popup/oferta/btn_accept-clicked.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 272px;
+    height: 45px;
+}
+
+.zakratik:active{
+    background: url(CES/popup/oferta/btn_close-clicked.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 272px;
+    height: 45px;
+}
+
+.zakrat_prav{
+    background: url(CES/popup/rules/btn_close.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 195px;
+    height: 45px; 
+    margin-bottom: 25px;
+}
+.zakrat_prav:hover{
+    background: url(CES/popup/rules/btn_close-hover.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 195px;
+    height: 45px; 
+}
+.zakrat_prav:active{
+    background: url(CES/popup/rules/btn_close-clicked.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 195px;
+    height: 45px; 
+}
+#score_id{
+    font-family: "Acrom";
+    margin-top: 69px;
+    margin-bottom: -25px;
+}
+#anwer_id{
+    font-family: "Acrom";
+}
+@media only screen
+and (min-device-width: 771px) {
+    .lion-image-mobile{
+        display:none;
+    }
+    .slots-text-mobile{
+        display:none;
+    } 
+    .mobile-footer{
+        display:none;
+    }
+    .mobile-header{
+        display:none;
+    }
+    .footer-button-images{
+        display:none;
+    }
+    .score-block-mobile{
+        display:none;
+    }
+}
+
+
+
+/*Mobile styles*/
+@media only screen
+and (max-device-width: 770px) {
+    body{
+        background: #000000 url(images/mobile_main-bg.png) center 0 no-repeat;
+        background-size: 100%;
+    }
+    section{
+        flex-direction: column;
+        width:100%;
+    }
+    .mobile-header{
+        display:block;
+        position:fixed;
+        width:100%;
+        top:0;
+    }
+    .mobile-header img{
+        width:100%;
+        transform: rotate(180deg);
+    }
+    .mobile-footer{
+        display:block;
+        position:fixed;
+        width:100%;
+        bottom:0;
+    }
+    .mobile-footer img{
+        width:100%;
+    }
+    .lion-image{
+        display:none;
+    }
+    .lion-image-mobile{
+        background: url(images/Icons/1_00015.png) center 0 no-repeat;
+        background-size: 245px;
+        height:265px;
+        display:flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align:justify;
+    }
+    .lion-image-mobile img{
+        width: 246px;
+        margin-left: 8px;
+    }  
+    .left-section{
+        display:none;
+        margin: 50% 40%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+    }
+    .games-block{
+        height: 440px;
+        width: 550px;
+        left: 0;
+        text-align: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: 67% auto;
+        position: fixed;
+    }
+    .all-games{
+        margin: 0 auto;
+    }
+    .all-games-active{
+        margin: 0 auto;
+    }
+    .right-section{
+        display:none;
+    }
+    .slots-text{
+        display:none;
+    }
+    .slots-text-mobile{
+        font-size: 25px;
+        letter-spacing: 0px;
+        color: #fff;
+        font-family: "Microsoft Sans Serif";
+        text-align: center;
+        margin-top:10px;
+    }
+    .center-section{
+        margin-top:0px;
+        width:100%;
+        height:100%;
+        margin-left:0px;
+    }
+    .center-section img{
+        margin:0 auto;
+        width:484px;
+        height:295px;
+    }
+    .score-block-mobile{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgb(0,0,0,0.8);
+    }
+    .text1{
+        font-size: 55px;
+        color: #ffffff;
+        font-family: "Radiotechnika";
+        text-align: center;
+        margin-top: 6px;
+    }
+    .text2{
+        margin: 0 auto;
+        text-align: center;
+        font-size: 102px;
+        color: #ffae00;
+        font-weight: bold;
+        font-family: "Acrom";
+        margin-bottom: 16px;
+    }
+    .footer-image{
+        display:none;
+    }
+    .footer-button-images{
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        bottom:0;
+        position:fixed;
+        z-index:2;
+    }
+    .footer-button-images button {
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+        outline: none;
+        margin-bottom: 35px;
+    }
+    .footer-button-images img{
+        width:50px;
+    }
+    .button-save{
+        display:none;
+    }
+    .br-block{
+        display:none;
+    }
+    .black-block{
+        width: 100%;
+        margin: 0 auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        height: 100%;
+    }
+    .record{
+        margin: 50% auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+    }
+    .oprosiki{
+        margin: 50% auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+    }
+    .opros_start{
+        margin: 50% auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+    }
+    .ofer_start{
+        margin: 50% auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+    }
+    .pravila_start{
+        margin: 50% auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+    }
+
+}
+
+@media only screen and (min-device-width: 771px) {
+
+    @media only screen and (min-width: 1400px) {
+
+    }
+    @media only screen and (max-width: 1399px) {
+        .games-block{
+            width: 150px;
+            height:524px;
+        }
+        .all-games{
+            width: 140px;
+        }
+        .upperline{
+            width: 148px;
+        }
+        .center-section{
+            margin-left: 0px;
+        }
+        .right-section{
+            width: 275px;
+            margin-left: 21px;
+        }
+        section{
+            width: 1209px;
+        }
+        .all-games-active{
+            width:140px;
+            justify-content: center;
+        }
+    }
+    @media only screen and (max-width: 1280px) {
+        section{
+            width:1069px;
+            margin: 0 auto;
+        }
+        .center-section{
+            margin-left: 57px;
+            width:588px;
+        }
+        .center-section img{
+            width: 282px;
+        }
+        .right-section{
+            width:230px;
+            margin-left:0px;
+        }
+        .score-block{
+            width:230px;
+        }
+        .score-input{
+            width:180px;
+        }
+        .denomination-text{
+            font-size:10px;
+        }
+        .score-coefficient{
+            width:50px;
+            height:25px;
+            font-size:16px;
+        }
+        .score-coefficient-menu{
+            width:50px;
+            font-size:16px;
+        }
+        .im_hov{
+            width:25px;
+            height:25px;
+        }
+        .im_hov:active{
+            width:25px;
+            height:25px;
+        }
+        .jackpot-block{
+            width:230px;
+        }
+        .jackpot-title img{
+            width:180px;
+        }
+        .upperline2{
+            width:228px;
+        }
+        .jackpot-item-icon{
+            margin-left:5px;
+        }
+        .jackpot-item-icon img{
+            width:25px;
+        }
+        .jackpot-item-text{
+            font-size:14px;
+            margin-left:6px;
+        }
+        .jackpot-item-text2{
+            margin-right:7px;
+        }
+        .buttons{
+            width:230px;
+        }
+        .button-rules{
+            background-size: 100px;
+            width:100px;
+            height:26px;
+            font-size:12px;
+        }
+        .opros{
+            background-size: 200px;
+            width:200px;
+        }
+        .opros h1{
+            margin-top:19px;
+        }
+        .button-save{
+            width:618px;
+        }
+        .br-block{
+            width:562px;
+        }
+    }
+}
